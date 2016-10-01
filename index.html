@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html ng-app="HTMLMaker">
+<head>
+<link rel="stylesheet" href = "node_modules/bootstrap/dist/css/bootstrap.css"/>
+<link rel="stylesheet" href = "app/css/main.css"/>
+
+</head>
+
+
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top" ng-controller="NavigationController">
+<form method="post" enctype="multipart/form-data" action="/upload">
+    <input type="hidden" name="msgtype" value="2"/>
+    <input type="file" name="upload" />
+    <input type="submit" value="Upload" />
+</form>
+
+	
+</nav>
+
+<body>
+<div ui-view></div>
+</body>
+
+
+</html>
